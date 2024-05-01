@@ -54,3 +54,54 @@ nav
             padding-left: 32.5px
             border-left: 1px solid $border-color
             height: 100%
+            &__link
+                display: inline-flex
+                vertical-align: center
+                gap: 8px
+                text-decoration: none
+                color: $text-color-black
+
+.home
+    margin-top: 50px
+    &__title
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        letter-spacing: -0.02em
+        color: $text-color-black
+    &__subtitle
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        letter-spacing: -0.02em
+        color: $text-color-black
+        padding: 40px 0 34px 0
+    &__cards
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 20px 
+        .card
+            width: 380px
+            height: 310px
+            &__link
+                font-weight: 700
+                font-size: 14px
+                line-height: 160%
+                align-items: center
+                letter-spacing: -0.01em
+                color: $text-color-blue
+                text-decoration: none
+                display: block
+                padding-top: 6px
+            &__descr
+                font-weight: 700
+                font-size: 16px
+                line-height: 160%
+                letter-spacing: -0.01em
+                color: $text-color-black
+            &__subdescr
+                font-weight: 400
+                font-size: 14px
+                line-height: 160%
+                letter-spacing: -0.01em
+                color: $text-color-gray

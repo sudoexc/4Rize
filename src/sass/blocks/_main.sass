@@ -77,9 +77,10 @@ nav
         color: $text-color-black
         padding: 40px 0 34px 0
     &__cards
-        display: grid
-        grid-template-columns: repeat(4, 1fr)
-        gap: 20px 
+        .cards 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
         .card
             width: 380px
             height: 310px

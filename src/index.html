@@ -71,6 +71,7 @@
 
         <main>
             <nav class="main-container">
+                <img class="logo-hide" src="./icons/logo.svg" alt="">
                 <ul class="menu-list">
                     <li class="menu-list__link"><a href="#">Каталог сценариев</a></li>
                     <li class="menu-list__link"><a href="#">Продукты (бренды)</a></li>
@@ -79,17 +80,21 @@
                 </ul>
 
                 <div class="right-side">
-                    <div class="user">
+                    <div class="right-side__user">
                         <a href="#"><img src="./icons/user.svg" alt="user"></a>
                     </div>
-                    <div class="language">
-                        <a class="language__link" href="#"><img src="./icons/Flag.svg" alt=""> Eng</a>
+                    <div class="right-side__language">
+                        <a href="#"><img src="./icons/Flag.svg" alt=""> Eng</a>
                     </div>
+                    <button class="right-side__button"><img src="./icons/button.svg" alt=""><span>Menu</span></button>
                 </div>
             </nav>
 
             <section class="home main-container">
-                <h2 class="home__title">Каталог сценариев</h2>
+                <div class="home__filter-wrapper">
+                    <h2 class="title">Каталог сценариев</h2>
+                    <button><img src="./icons/ic-filter.svg" alt="">Открыть фильтр</button>
+                </div> 
                 <h2 class="home__subtitle">Последний добавленные сценарии</h2>
 
                 <div class="home__cards">
@@ -144,9 +149,64 @@
                 </div>
 
                 <div class="home__news">
-                    
+                    <div class="news-title">
+                        <h2>Новости из мира финтех</h2>
+                        <a href="#">Все записи</a>
+                    </div>
+                    <div class="news-cards">
+                        <div class="card">
+                            <div class="card__circle"></div>
+                            <div class="card__descr">
+                                <h5>Обзор рынка</h5>
+                                <p>21.10.2023</p>
+                            </div>
+                            <h3 class="card__title">Кто лучший в рынке Uzum или Click?</h3>
+                            <p class="card__about-news">Uzum Bank - это платежная система и надежный онлайн-банк в одном мобильном приложении, web-странице и даже кнопочном телефоне</p>
+                            <a class="card__link" href="#">Читать далее <img src="./icons/arrow4-right.svg" alt="arrow-right"></a>
+                        </div>
+                        <div class="card">
+                            <div class="card__circle second-circle"></div>
+                            <div class="card__descr">
+                                <h5>Обзор рынка</h5>
+                                <p>21.10.2023</p>
+                            </div>
+                            <h3 class="card__title">Обзор приложение</h3>
+                            <p class="card__about-news">Web-странице и даже кнопочном телефоне</p>
+                            <a class="card__link" href="#">Читать далее <img src="./icons/arrow4-right.svg" alt="arrow-right"></a>
+                        </div>
+                        <div class="card">
+                            <div class="card__circle third-circle"></div>
+                            <div class="card__descr">
+                                <h5>Обзор рынка</h5>
+                                <p>21.10.2023</p>
+                            </div>
+                            <h3 class="card__title">UniPay покинул рынок Узбекистана. Есть возможность захватить кусок тора</h3>
+                            <p class="card__about-news">Она появилась в конце 2021 года, когда ЦБ выдал компании Qulay Pul лицензию платёжной системы. Это было большое событие, потому что до этого у нас были только две такие системы — Uzcard и Humo.</p>
+                            <a class="card__link" href="#">Читать далее <img src="./icons/arrow4-right.svg" alt="arrow-right"></a>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <footer class="main-container">
+                <div class="left-side">
+                    <ul class="left-side__links">
+                        <li><a href="#">Перейти на сайт</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Финтех блог</a></li>
+                    </ul>
+                    <p class="left-side__descr">© 4Rize. Исследовательская платформа для финтех и банков</p>
+                </div>
+                <div class="right-side">
+                    <p class="right-side__info">Мы в соц сетях</p>
+                    <div class="right-side__icons">
+                        <img src="./icons/instagram.svg" alt="">
+                        <img src="./icons/linkedin.svg" alt="">
+                        <img src="./icons/youtube.svg" alt="">
+                        <img src="./icons/telegram.svg" alt="">
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
 </body>

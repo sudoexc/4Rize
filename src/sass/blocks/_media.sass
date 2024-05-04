@@ -18,8 +18,6 @@
                 border-right: 1px solid $border-color
             button
                 display: flex
-    .home__cards
-        justify-content: center
     nav
         .logo-hide
             display: block
@@ -38,7 +36,6 @@
     aside
         display: none
     
-
 @media ( max-width: 1115px)
     .news-cards
         .card:last-child
@@ -49,8 +46,8 @@
             display: none
         .right-side
             display: none   
-        .tablet
-            width: 100
+        .tablets
+            width: 100%
             display: flex !important
             justify-content: space-between
             &__links
@@ -62,6 +59,7 @@
                     line-height: 160%
                     letter-spacing: -0.01em
                     color: $text-color-blue
+                    text-decoration: none
                     display: flex
                     flex-direction: column
                     align-items: center
@@ -69,7 +67,79 @@
                         text-align: center
                     
                     
-                        
+@media ( max-width: 600px)
+    .home
+        &__filter-wrapper
+            display: flex
+            flex-direction: column
+            width: auto
+            .title
+                width: auto
+                border-right: none
+                text-align: center
+                padding-right: 0
+            button
+                top: none
+                margin: 16px auto 0 auto
+                position: relative
+        &__subtitle
+            text-align: center
+        &__news
+            .news-title
+                display: flex
+                flex-direction: column
+                align-items: start
+                a
+                    border: none
+                    padding-left: 0
+                    margin-top: 16px
+    nav
+        .logo-hide
+            display: none
+        .right-side
+            display: flex
+            justify-content: space-between !important
+            width: 100%
+            .logo-mobile
+                display: block
+            &__language
+                padding-left: 0
+                margin: 0     
+            
                     
-                    
+@media ( max-width: 565px)
+    .home
+        &__news
+            .news-cards  
+                display: flex
+                flex-direction: column
+                align-items: center
+                .card
+                    width: 280px
+                .card:last-child
+                    margin-bottom: 82px
+        &__cards
+            display: flex
+            flex-direction: column
+            align-items: center
+            .card
+                width: 280px
+                height: 260px
+                img
+                    width: 280px
+    .main-container
+        padding: 0 15px   
+
+
+@media ( max-width: 446px)
+    .home
+        &__filter-wrapper
+            .title
+                text-align: left
+            button
+                margin: 16px 0 0 0
+        &__subtitle
+            text-align: left
+            width: 290px
+        
 

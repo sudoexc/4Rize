@@ -12,6 +12,12 @@
             margin-top: 32px
 
 @media ( max-width: 1471px)
+    .home
+        &__filter-wrapper
+            .title
+                border-right: 1px solid $border-color
+            button
+                display: flex
     .home__cards
         justify-content: center
     nav
@@ -32,3 +38,38 @@
     aside
         display: none
     
+
+@media ( max-width: 1115px)
+    .news-cards
+        .card:last-child
+            margin-top: 0
+    footer
+        display: block
+        .left-side
+            display: none
+        .right-side
+            display: none   
+        .tablet
+            width: 100
+            display: flex !important
+            justify-content: space-between
+            &__links
+                margin: 0 auto
+                width: 100px
+                a
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 160%
+                    letter-spacing: -0.01em
+                    color: $text-color-blue
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    p
+                        text-align: center
+                    
+                    
+                        
+                    
+                    
+

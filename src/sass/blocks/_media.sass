@@ -31,8 +31,21 @@
             .news-cards
                 grid-template-columns: repeat(1, 1fr)
                 .card
-                    max-width: 640px
-
+                    min-width: 700px
+                    gap: 16px
+                    display: flex
+                    align-items: center
+                    &__wrapper
+                        width: 640px
+                    
+@media ( max-width: 740px)
+    .home
+        &__news
+            .news-cards
+                .card
+                    min-width: 500px
+                    &__wrapper
+                        width: 440px
     
     
 @media ( max-width: 1115px)
@@ -81,14 +94,11 @@
             .title
                 width: auto
                 border-right: none
-                text-align: center
                 padding-right: 0
             button
                 top: none
-                margin: 16px auto 0 auto
+                margin: 16px 0 0 0
                 position: relative
-        &__subtitle
-            text-align: center
         &__news
             .news-title
                 display: flex
@@ -113,14 +123,20 @@
             
                     
 @media ( max-width: 565px)
+    nav
+        .right-side
+            margin-bottom: 35px
     .home
         &__news
             .news-cards  
                 display: flex
                 flex-direction: column
-                align-items: center
+                min-width: 250px
                 .card
-                    max-width: 280px
+                    min-width: 250px 
+                    display: block
+                    &__wrapper
+                        width: 280px
                 .card:last-child
                     margin-bottom: 82px
         &__cards
@@ -133,18 +149,101 @@
                 img
                     width: 280px
     .main-container
-        padding: 0 15px   
+        padding: 35px 20px 0 20px 
 
 
 @media ( max-width: 446px)
+    nav
+        .right-side
+            .logo-mobile
+                width: 58px
+                height: 20px
+            &__language
+                font-size: 12px
+            &__button
+                width: 54px
+                height: 23px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 5.5px 3 5.5px 4px
+                gap: 4px
+                font-size: 11px
+                span
+                    padding-top: 4px
     .home
+        &__cards
+            gap: 0
+            .card
+                &__subdescr
+                    display: none
+        &__subtitle
+            font-size: 18px
         &__filter-wrapper
             .title
-                text-align: left
+                font-size: 20px
+        &__news
+            .news-title
+                padding-top: 0
+                h2
+                    font-size: 22px
+                a
+                    font-size: 14px
+            .news-cards
+                .card
+                    padding-top: 12px
+                    &__descr
+                        display: none
+                    &__descr-phone
+                        display: block
+                    &__about-news
+                        padding-top: 0
+                    &__circle
+                        width: 32px
+                        height: 32px
             button
                 margin: 16px 0 0 0
+                width: 145px
+                height: 33px
+                font-size: 12px
         &__subtitle
             text-align: left
             width: 290px
-        
-
+    footer
+        padding-top: 16px !important
+        margin: 0 0 20px 0
+    .tablets
+        .tablets__links
+            a
+                svg
+                    width: 19px
+                    height: 19px
+                p
+                    font-size: 12px
+    .phone-btns
+        display: flex
+        gap: 10px
+    .tablet-btn
+        display: none
+    .phone-btn
+        display: block
+    .phone-btn:last-child
+        margin: 0
+    .white-btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 12px 16px
+        gap: 8px
+        width: 94px
+        height: 44px
+        background: #FFFFFF
+        border: 1px solid #8595AD
+        border-radius: 4px
+        font-weight: 700
+        font-size: 14px
+        line-height: 140%
+        display: flex
+        align-items: center
+        color: #14181F

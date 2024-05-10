@@ -283,8 +283,10 @@
     height: 1280px
     z-index: 10
     display: none
+    transition: transform 1s ease
     opacity: 0
     &.active
+        transition: left 1s ease
         left: -330px
         display: block
         opacity: 1
@@ -335,3 +337,5 @@
         border: none
         margin-left: 32px
 
+.phone-btn
+    display: none
